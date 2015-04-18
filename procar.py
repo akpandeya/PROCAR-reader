@@ -1,12 +1,12 @@
 import sys
 if ((len(sys.argv) != 2)):
-	print "Usage: python lmdos.py ion_number \n Example: python lmdos.py 3 \nIt will print the lm decomposed DOS for ion number 3 in POSCAR. \nRequires PROCAR file to be present"
+	print "Usage: python procar.py ion_number \n Example: python lmdos.py 3 \nIt will print the lm decomposed DOS for ion number 3 in POSCAR. \nRequires PROCAR file to be present"
 	exit(1)
 try:
 	int(sys.argv[1])
 except:
 	print "The second argument should be integer. If you are writing element name, it won't work. Check POSCAR to find put the ion number."
-	print "Usage: python lmdos.py ion_number \n Example: python lmdos.py 3 \nIt will print the lm decomposed DOS for ion number 3 in POSCAR. \nRequires PROCAR file to be present"
+	print "Usage: python procar.py ion_number \n Example: python lmdos.py 3 \nIt will print the lm decomposed DOS for ion number 3 in POSCAR. \nRequires PROCAR file to be present"
 	exit(2)
 readion = int(sys.argv[1])
 try:
